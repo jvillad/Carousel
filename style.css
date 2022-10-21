@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #191919;
+}
+
+h2 {
+    padding-top: 30px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color: #ECECF2;
+}
+
+.btns {
+    text-align: center;
+}
+
+.btns button {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    background-color: rgb(214, 204, 204);
+    border: none;
+    width: 50px;
+    height: 30px;
+    border-radius: 10%;
+    transition: 0.5s;
+    margin: 0 10PX;
+}
+
+.btns button:hover {
+    background-color: #fff;
+}
+
+.btn:disabled {
+    background-color: #777;
+    cursor: not-allowed;
+}
+
+
+#formlist {
+    display: flex;
+    width: 1280px;
+    max-width: 100%;
+    overflow: auto;
+    margin: 0px auto;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#formlist::-webkit-scrollbar {
+    display: none;
+}
+
+
+.item {
+    border-radius: 15px;
+    width: 300px;
+    height: 500px;
+    background-image: linear-gradient(to top, #AEC0CE, #ECECF2);
+    overflow: hidden;
+    transition: 0.5s;
+    margin: 10px;
+    display: none;
+   
+    
+}
+
+.item p {
+    text-align: center;
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.item .image-avatar {
+    display: block;
+    margin: 50px auto 10px;
+    width: 240px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px #7e878d;
+}
+
+.item .content {
+    padding: 15px 30px;
+    font-family: monospace;
+   
+}
+
+.item .content table td{
+    padding: 10px 0;
+    border-bottom: 1px solid #AEC0CE;
+    
+}
+
+.item .content table td:nth-child(2) {
+    text-align: right;
+}
+
+.item .description {
+    
+    text-align: center;
+    border-bottom: none !important;
+}
+
+@media screen and (max-width: 1024px) {
+    .item {
+        width: calc(33.3vw - 20px);
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .item {
+        width: calc(50vw - 20px);
+    }
+}
+
+.active {
+    display: block;
+}
+
+
+footer {
+    padding-top: 70px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ECECF2;
+    font-size: 10px;
+}
